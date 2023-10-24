@@ -1,22 +1,43 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Nav, NavLink } from '../../bootstrap'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import '../menu.scss'
+import { Button } from '../../bootstrap'
+import {
+  faBell,
+  faCartShopping,
+  faEnvelope,
+  faMagnifyingGlass,
+} from '@fortawesome/free-solid-svg-icons'
+import '../styles.scss'
+import ActionItemNotif from '../ActionItemNotif'
+import styles from '../navigation.module.scss'
 
 export default function Actions() {
   return (
-    <Nav
-      defaultActiveKey="/"
-      activeKey={'/'}
-      className="m-auto d-flex menu-wrapper"
-    >
-      <NavLink className="d-flex">
+    <div className="m-auto d-flex">
+      <Button variant="link text-reset">
         <FontAwesomeIcon
           icon={faMagnifyingGlass}
           className="fa-solid fa-magnifying-glass icon"
         />
-        <div className="vr mx-3"></div>
-      </NavLink>
-    </Nav>
+      </Button>
+      <div className="vr mx-2"></div>
+      <div className={styles.notifsWrapper}>
+        <Button variant="link text-reset"></Button>
+        <ActionItemNotif notif="9">
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="fa-regular fa-envelope icon"
+          />
+        </ActionItemNotif>
+        <ActionItemNotif notif="1">
+          <FontAwesomeIcon icon={faBell} className="fa-regular fa-bell icon" />
+        </ActionItemNotif>
+        <ActionItemNotif notif="4">
+          <FontAwesomeIcon
+            icon={faCartShopping}
+            className="fa-solid fa-cart-shopping icon"
+          />
+        </ActionItemNotif>
+      </div>
+    </div>
   )
 }

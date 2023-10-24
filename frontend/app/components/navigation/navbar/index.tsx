@@ -12,9 +12,9 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className="bg-white navbar-light p-0">
       <Container>
-        <Brand />
         <NavbarToggle aria-controls="basic-navbar-nav" />
         <NavbarCollapse id="basic-navbar-nav">
+          <Brand />
           <Menu />
           <Actions />
         </NavbarCollapse>

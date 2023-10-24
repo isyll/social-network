@@ -6,7 +6,7 @@ import {
   faCommentDots,
   faUsers,
 } from '@fortawesome/free-solid-svg-icons'
-import '../menu.scss'
+import '../styles.scss'
 
 export default function Menu() {
   return (
