@@ -1,0 +1,14 @@
+.icon {
+  font-size: 1.52em;
+}
+
+.menu-wrapper {
+  gap: 16px;
+}
+
+.nav-link {
+  padding: 20px !important;
+  &.active {
+    border-bottom: 3px solid var(--bs-primary);
+  }
+}

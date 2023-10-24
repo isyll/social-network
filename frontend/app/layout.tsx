@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: 'Ecommerce',
+  title: 'Sénégal Online',
   description: "Super site d'achat et de vente sur Internet",
 }
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
