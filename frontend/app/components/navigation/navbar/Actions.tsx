@@ -21,7 +21,6 @@ export default function Actions() {
       </Button>
       <div className="vr mx-2"></div>
       <div className={styles.notifsWrapper}>
-        <Button variant="link text-reset"></Button>
         <ActionItemNotif notif="9">
           <FontAwesomeIcon
             icon={faEnvelope}

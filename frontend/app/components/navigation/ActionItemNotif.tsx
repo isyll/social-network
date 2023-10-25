@@ -8,7 +8,10 @@ export default function ActionItemNotif({
   desc?: string
 }) {
   return (
-    <button type="button" className="btn btn-link text-reset position-relative">
+    <button
+      type="button"
+      className="btn btn-link text-reset position-relative p-1 align-self-center"
+    >
       {children}
       <span className="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
         {notif}
