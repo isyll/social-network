@@ -9,6 +9,7 @@ import {
 import '../styles.scss'
 import ActionItemNotif from '../ActionItemNotif'
 import styles from '../navigation.module.scss'
+import Image from 'next/image'
 
 export default function Actions() {
   return (
@@ -36,6 +37,10 @@ export default function Actions() {
             className="fa-solid fa-cart-shopping icon"
           />
         </ActionItemNotif>
+      </div>
+      <div className="d-flex align-items-center ms-5">
+        <p className="m-0 fw-bold me-1 fs-5">Assane</p>
+        <Image src="/user.png" alt="Photo de profil" width={42} height={42} />
       </div>
     </div>
   )
