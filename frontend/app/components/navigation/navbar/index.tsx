@@ -10,7 +10,7 @@ import Menu from './Menu'
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-white navbar-light p-0">
+    <Navbar expand="lg" className="bg-light navbar-light p-0">
       <Container>
         <NavbarToggle aria-controls="basic-navbar-nav" />
         <NavbarCollapse id="basic-navbar-nav">
